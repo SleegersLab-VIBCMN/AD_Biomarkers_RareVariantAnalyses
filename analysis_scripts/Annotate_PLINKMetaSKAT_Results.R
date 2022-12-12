@@ -1,4 +1,4 @@
-#!~/miniconda3/bin/Rscript
+#!/usr/bin/env Rscript
 ## Annotate the results of gene-based (rare variant) association meta-analyses as implemented in MetaSKAT package using PLINK format files
 ## Written by Fahri Kucukali for the analyses conducted for Kucukali et al., Whole‐exome rare‐variant analysis of Alzheimer's disease and related biomarker traits, Alzheimer's & Dementia (2022). http://doi.org/10.1002/alz.12842
 ## For issues: https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses or e-mail Fahri.Kucukali@uantwerpen.vib.be
@@ -16,8 +16,8 @@ suppressWarnings(suppressMessages(library(qqman)))
 suppressWarnings(suppressMessages(library(rmeta)))
 
 p <- arg_parser("Annotate MetaSKAT results, with different modes and options. Publication Version 1.1, December 2022")
-p <- add_argument(p, "--resultfile1", help = "Annotated SKAT File 1, from PLINKSKAT.R", type = "character", nargs = '+')
-p <- add_argument(p, "--resultfile2", help = "Annotated SKAT File 2, from PLINKSKAT.R", type = "character", nargs = '+')
+p <- add_argument(p, "--resultfile1", help = "Annotated SKAT File 1, from Annotate_PLINKSKAT_Results.R", type = "character", nargs = '+')
+p <- add_argument(p, "--resultfile2", help = "Annotated SKAT File 2, from Annotate_PLINKSKAT_Results.R", type = "character", nargs = '+')
 p <- add_argument(p, "--addNamefile1", help = "Prefix to be added to the columns of File 1.", type = "character", nargs = '+')
 p <- add_argument(p, "--addNamefile2", help = "Prefix to be added to the columns of File 2.", type = "character", nargs = '+')
 p <- add_argument(p, "--metaresult", help = "MetaSKAT Result file (from PLINKMetaSKAT.R). Only commonly tested genes (tested in both datasets) will be kept in the final annotation file.", type = "character", nargs = '+')

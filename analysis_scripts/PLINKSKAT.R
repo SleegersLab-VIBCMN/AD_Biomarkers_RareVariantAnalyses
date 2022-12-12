@@ -1,4 +1,4 @@
-#!~/miniconda3/bin/Rscript
+#!/usr/bin/env Rscript
 ## Run gene-based (rare variant) association tests as implemented in SKAT package using PLINK format files
 ## Written by Fahri Kucukali for the analyses conducted for Kucukali et al., Whole‐exome rare‐variant analysis of Alzheimer's disease and related biomarker traits, Alzheimer's & Dementia (2022). http://doi.org/10.1002/alz.12842
 ## For issues: https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses or e-mail Fahri.Kucukali@uantwerpen.vib.be

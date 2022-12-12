@@ -2,7 +2,7 @@
 
 ------
 
-Analysis scripts of the gene-based rare variant association studies (RVASs) conducted for the study [**"Whole-exome rare variant analysis of Alzheimer’s disease and related biomarker traits"**](https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12842) by Küçükali _et al._, Alzheimer's and Dementia (2022), https://doi.org/10.1002/alz.12842 .
+Analysis scripts of the gene-based rare variant association studies (RVASs) conducted for the paper [**"Whole-exome rare variant analysis of Alzheimer’s disease and related biomarker traits"**](https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12842) by Küçükali _et al._, Alzheimer's and Dementia (2022), https://doi.org/10.1002/alz.12842 .
 
 ------
 
@@ -277,7 +277,9 @@ In addition to the columns explained in Annotate_PLINKSKAT_Results.R section (wh
 
 ## Examples <a name="7"></a>
 
-Below we provide examples for gene-based RVAS using these Rscripts based on a simulated genetic data and dummy phenotypic values.
+Below we provide examples for gene-based RVAS using these Rscripts based on a simulated genetic data and dummy phenotypic values. 
+
+All example data and example outputs are available under [here as a subdirectory](https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses/tree/main/analysis_scripts/example_data).
 
 ### Simulated Genetic and Phenotypic Data <a name="8"></a>
 
@@ -417,6 +419,7 @@ Annotate_PLINKSKAT_Results.R --mode full --variable continuous --result cohort2_
 
 Run SKAT-O PLINKMetaSKAT.R for Cohort 1 and Cohort 2, with the ContPheno1 phenotype, and four covariates (binaryCov1 binaryCov2 contCov1 contCov2) for each cohort (separated as 4 covariates each).
 
+```bash
 PLINKMetaSKAT.R --studygenoOrdose genotype genotype --variable continuous --phenotypes ContPheno1 ContPheno1 --studyprefixnames rareVariants_simulatedGeneticData1 rareVariants_simulatedGeneticData2 --setIDnames simulatedGeneticData1_SetID simulatedGeneticData2_SetID --phenocovars simulatedGeneticData1_phenocovar.tsv simulatedGeneticData2_phenocovar.tsv --covnames binaryCov1 binaryCov2 contCov1 contCov2 binaryCov1 binaryCov2 contCov1 contCov2 --covnos 4 4 --out continuousMetaSKATO_wCov_results --impute_method fixed
 ```
 

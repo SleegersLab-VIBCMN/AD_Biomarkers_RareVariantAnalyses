@@ -1,6 +1,10 @@
 # AD Biomarkers Rare Variant Analyses - Association Results
 
-Full summary statistics of the gene-based rare variant association studies (RVASs) conducted for the study [**"Whole-exome rare variant analysis of Alzheimer’s disease and related biomarker traits"**](https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12842) by Küçükali _et al._, Alzheimer's and Dementia (2022), https://doi.org/10.1002/alz.12842 .
+------
+
+Full summary statistics of the gene-based rare variant association studies (RVAS) conducted for the study [**"Whole-exome rare variant analysis of Alzheimer’s disease and related biomarker traits"**](https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12842) by Küçükali _et al._, Alzheimer's and Dementia (2022), https://doi.org/10.1002/alz.12842 .
+
+------
 
 RVAS summary statistics for 17 AD-related traits in [**EMIF-AD**](https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses/tree/main/association_results/EMIF_AD) MBD WES cohort, for 13 traits in [**ADNI**](https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses/tree/main/association_results/ADNI) WGS cohort, and for the [**meta-analyses**](https://github.com/SleegersLab-VIBCMN/AD_Biomarkers_RareVariantAnalyses/tree/main/association_results/Meta_EMIF_AD_ADNI) of 13 traits tested in both cohorts are represented in each subdirectory where protein-altering and LoF model results are provided in separate subdirectories (named **"Protein_altering"** and **"LoF"**).
 
